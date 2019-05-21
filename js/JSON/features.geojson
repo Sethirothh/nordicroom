@@ -1,0 +1,19 @@
+var geoJSON = {
+  "features": [
+    {
+      "type": "Feature",
+      "properties": {
+        "NordicRoom": ""
+      },
+      "geometry": {
+        "coordinates": [
+          10.210121,
+          56.147745
+        ],
+        "type": "Point"
+      },
+      "id": "dbd77e08d11a67c6f060b39ac19956b0"
+    }
+  ],
+  "type": "FeatureCollection"
+}
