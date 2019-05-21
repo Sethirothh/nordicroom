@@ -18,7 +18,7 @@ $("nav ul li a").click(function(){
 
 $(".udvid").click(function(){
   var numItems = $('.gallery div').length - 1;
-  var heightItems = numItems * 30.6 + "vh";
+  var heightItems = numItems * 31.3 + "vh";
   console.log(heightItems);
   var attr = $(".gallery").attr('style');
   if (typeof attr !== typeof undefined && attr !== false) {
