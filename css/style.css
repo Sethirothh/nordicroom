@@ -566,11 +566,68 @@ footer::after {
   content:'';
   position: absolute;
   width:100%;
-  height:100%;
+  height:60vh;
   background:linear-gradient(rgba(0,0,0,0), rgba(0,0,0,1)), url("../img/nordicroom.png") no-repeat center;
   transform:rotate(180deg);
 }
 
+
+@media screen and (min-width: 600px) and (max-width: 1199px) {
+
+header > ul > li > a {
+  font-size:80px;
+}
+nav > div {
+  height:60px;
+  width:60px;
+}
+.close {
+  width:60px;
+  height:60px;
+}
+nav > ul > li > a {
+  font-size:80px;
+}
+nav > div > span {
+  height:8px;
+}
+.kunstner > img:first-child {
+  width:100%;
+  height:120%;
+}
+.gallery > div > img {
+  height:110%;
+}
+.gallery > .button {
+  bottom:0;
+  margin-bottom:-4px;
+}
+.omos > div {
+  height:60vh;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  padding:0 80px;
+}
+.omos > div > p {
+  font-size:24px;
+  line-height:2em;
+}
+.kontakt > div > ul > li {
+  font-size:32px;
+}
+footer {
+  height:40vh;
+}
+footer::after {
+  height:40vh;
+}
+}
+@media screen and (min-width: 1200px) {
+
+
+
+}
 
 /*keyframes*/
 @keyframes rotate {

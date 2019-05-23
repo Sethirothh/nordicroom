@@ -1,3 +1,5 @@
+// Snippet fra: https://css-tricks.com/snippets/jquery/smooth-scrolling/
+
 $('a[href*="#"]')
   // Remove links that don't actually link to anything
   .not('[href="#"]')

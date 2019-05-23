@@ -21,13 +21,12 @@ $(".udvid").click(function(){
   if (typeof attr !== typeof undefined && attr !== false) {
     $(".gallery").removeAttr("style", "height");
     $(".udvid").toggleClass("luk");
-    console.log("shiet")
   } else {
   $(".udvid").toggleClass("luk");
     $(".gallery").css("height", heightItems);
   }
 })
-
+// Inspiration og kode fra: https://www.w3schools.com/howto/howto_js_navbar_sticky.asp
 $(window).scroll(function(){
   stickyScroll()});
 
@@ -53,7 +52,7 @@ function myFunction() {
     navbar.classList.remove("sticky");
   }
 }
-
+// https://kenwheeler.github.io/slick/ - Plugin fra denne hjemmeside.
 $(document).ready(function(){
 $('.slider').slick({
   lazyLoad: 'ondemand',
