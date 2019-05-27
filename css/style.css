@@ -231,9 +231,9 @@ section:nth-child(4) > div:first-child::after {
   position:absolute;
   top:0;
   right:0;
-  width:100px;
+  width:80px;
   margin:10px;
-  height:100px;
+  height:80px;
 }
 .kunstner > h3 {
   position:absolute;
@@ -291,6 +291,7 @@ section:nth-child(4) > div:first-child::after {
 }
 .k-aktiv > .dato > p {
   color:white !important;
+  font-size:16px !important;
 }
 .kunstner > h3::after {
 content:'';
@@ -343,7 +344,7 @@ bottom:0;
   height:0px;
 }
 .k-aktiv > p {
-  transform:translatey(60%);
+  transform:translatey(45%);
 }
 /*gallery*/
 .gallery {
@@ -574,6 +575,7 @@ display:none !important;
   background:white;
   margin:0 5px;
   border:0;
+  opacity:1;
 }
 .left {
   display:none;
@@ -823,6 +825,19 @@ section::after {
 }
 .begivenhederContent > p {
   font-size:24px;
+}
+.begivenhederContent > h3 {
+  font-size:60px;
+
+  font-family: 'freight-sans-condensed-pro', sans-serif;
+  font-weight: 900;
+  font-style: normal;
+  text-transform:uppercase;
+}
+.begivenhederContent > p:last-child {
+  position: absolute;
+  bottom:20%;
+  right:20%;
 }
 .omos {
   display:flex;
