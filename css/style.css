@@ -264,6 +264,7 @@ section:nth-child(4) > div:first-child::after {
   height:100%;
   display:flex;
   color:white;
+  padding:0 40px;
   justify-content: center;
   text-align:center;
   transform:translateY(100%);
@@ -623,6 +624,7 @@ nav > div {
   width:60px;
   height:60px;
 }
+
 nav > ul > li > a {
   font-size:80px;
 }
@@ -680,6 +682,15 @@ nav > div > span {
   transition:.5s;
 }
 nav>div:hover >span {
+  background-color:red;
+}
+.close {
+  cursor:pointer;
+}
+.close span {
+  transition:1s;
+}
+.close:hover span{
   background-color:red;
 }
 a:hover {
@@ -766,10 +777,10 @@ section::after {
 
 
 .grafik {
-  left:45%;
+  left:42%;
 }
 .kunstner:nth-child(odd) > .grafik {
-  left:85%;
+  left:80%;
 }
 .kunstner > img:first-child {
   width:50%;
@@ -856,7 +867,7 @@ color:white;
   border-right:2px solid white;
 }
 .omos > div:nth-child(2) > p {
-  font-size:24px;
+  font-size:18px;
   width:40%;
 }
 .omos > div > div {
@@ -891,7 +902,7 @@ color:white;
   left:0;
 }
 .kontakt > div:nth-child(2) > ul > li {
-  font-size:24px;
+  font-size:18px;
   transition:.6s;
 }
 
