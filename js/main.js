@@ -1,7 +1,12 @@
 //commit
 
 $(".kunstner").click(function(){
-  $(this).toggleClass("k-aktiv");
+  if ($(window).width() < 1200) {
+    $(this).toggleClass("k-aktiv");
+}
+else {
+  console.log("Bigger than 1200px");
+}
 })
 //event-click for navigation
 $("nav div").click(function(){
