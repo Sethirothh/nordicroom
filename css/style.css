@@ -115,6 +115,7 @@ nav > div {
   height:35px;
   width:35px;
   margin:10px 10px 0 0;
+  z-index: 5;
   flex-direction: column;
   justify-content: space-around;
 }
@@ -197,6 +198,7 @@ section > h2 {
   -webkit-text-fill-color: transparent;
   text-transform:uppercase;
   color:white;
+  z-index: 999;
   font-size:44px;
   margin:20px;
 }
@@ -357,8 +359,7 @@ bottom:0;
   overflow:hidden;
 }
 .gallery > div > img {
-  height:100%;
-  width:100%;
+  height:140%;
 }
 .gallery > .button {
   width:100%;
@@ -521,6 +522,21 @@ bottom:0;
   color:White;
   font-size:24px;
 }
+.slider-pc {
+display:none !important;
+    width: 100%;
+    height:60vh;
+
+}
+
+.slider-pc > div {
+  height:100%;
+  width:100%;
+}
+.slider-pc p {
+  color:white;
+  font-size:24px;
+}
 .slick-slide {
   margin: 0px 20px;
 }
@@ -558,14 +574,17 @@ bottom:0;
   margin:0 5px;
   border:0;
 }
-
-
+.left {
+  display:none;
+}
+.right{
+  display:none;
+}
 
 /*Map*/
 #map {
   width:100%;
   height:50vh;
-  background-color:red;
 }
 .marker {
   height:70px;
@@ -652,12 +671,12 @@ header > ul > li > a {
   transition:1.2s;
 }
 nav > div {
-  height:60px;
-  width:60px;
+  height:45px;
+  width:45px;
   cursor:pointer;
 }
 nav > div > span {
-  height:9px;
+  height:6px;
   transition:.5s;
 }
 nav>div:hover >span {
@@ -702,12 +721,6 @@ section::after {
   left:0;
   background:url('../img/lampe.png')
 }
-.YT {
-  margin-top:10vh;
-  height:60vh;
-  width:100% !important;
-  border:0 !important;
-}
 .kunstner {
   display:flex;
   justify-content: space-around;
@@ -746,9 +759,6 @@ section::after {
   right:0;
   top:0;
 }
-.kunstner:nth-child(odd) > .grafik {
-  left:0;
-}
  .kunstner > p {
   display:none;
 }
@@ -756,7 +766,10 @@ section::after {
 
 
 .grafik {
-  margin:50px;
+  left:45%;
+}
+.kunstner:nth-child(odd) > .grafik {
+  left:85%;
 }
 .kunstner > img:first-child {
   width:50%;
@@ -852,11 +865,11 @@ color:white;
   position: absolute;
   bottom:0;
   width:100%;
+  height:20%;
 
 }
 .omos > div > div > img {
-  width:200px;
-  height:200px;
+  height:80%;
   margin:0 50px;
 }
 .omos > div::after {
@@ -878,12 +891,82 @@ color:white;
   left:0;
 }
 .kontakt > div:nth-child(2) > ul > li {
-  font-size:32px;
+  font-size:24px;
   transition:.6s;
 }
 
 .kontakt > div {
 width:50% !important;
+}
+
+.slider {
+  display:none !important;
+}
+.slider-pc {
+  display:flex !important;
+  flex-direction: row;
+  justify-content: center;
+  overflow:hidden;
+}
+.ytSlider {
+  position: relative;
+}
+.ytSlider > h2 {
+  position:relative;
+  z-index: 5;
+}
+.slick-slider {
+  height:80vh;
+  width:100%;
+  display:flex;
+  position: relative;
+  justify-content: center;
+}
+.left {
+  position:absolute;
+  left:0;
+  top:0;
+  display:flex;
+  text-align:center;
+  line-height:90vh;
+  height:100%;
+  width:200px;
+  z-index: 0;
+  font-size:100px;
+  display:block;
+  color:White;
+  cursor:pointer;
+  transition:1s;
+}
+.right {
+  cursor:pointer;
+  position:absolute;
+  right:0;
+  top:0;
+  display:flex;
+  text-align:center;
+  line-height:90vh;
+  height:100%;
+  width:200px;
+  z-index: 0;
+  font-size:100px;
+  display:block;
+  color:White;
+  transition:1s;
+}
+.right:hover, .left:hover {
+  background:rgba(0,0,0,.6);
+}
+.slick-dots {
+  position:absolute;
+  bottom:4vh;
+  z-index: 3;
+}
+.YT {
+  margin:0 !important;
+  height:80vh;
+  width:100% !important;
+  border:0 !important;
 }
 
 footer::after {

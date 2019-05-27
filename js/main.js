@@ -65,6 +65,19 @@ $('.slider').slick({
   dots: true,
   arrows: false
 });
+$('.slider-pc').slick({
+  lazyLoad: 'ondemand',
+  infinite: true,
+  dots: true,
+  arrows: false
+});
 
+$('.left').click(function(){
+  $('.slider-pc').slick('slickPrev');
+})
+
+$('.right').click(function(){
+  $('.slider-pc').slick('slickNext');
+})
 
 });
